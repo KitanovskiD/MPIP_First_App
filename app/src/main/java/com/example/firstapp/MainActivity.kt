@@ -16,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         val firstButton = findViewById<Button>(R.id.firstButton)
         val implicitButton = findViewById<Button>(R.id.implicitButton)
 
+        val listViewActivityButton = findViewById<Button>(R.id.listViewActivityButton)
+
         val nameControl = findViewById<EditText>(R.id.name)
 
         firstButton.setOnClickListener(){
@@ -31,6 +33,12 @@ class MainActivity : AppCompatActivity() {
             secondIntent.setData(Uri.parse("https://www.javatpoint.com/"))
 
             startActivity(secondIntent)
+        }
+
+        listViewActivityButton.setOnClickListener(){
+            val firstIntent = Intent(this,  ListViewActivity::class.java)
+
+            startActivity(firstIntent)
         }
 
         Log.v("Main Activity", "On Create method!")
