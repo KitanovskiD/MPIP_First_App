@@ -50,4 +50,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/implicitButton"
         app:layout_constraintVertical_bias="0.315" />
+
+    <Button
+        android:id="@+id/recyclerViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="RecyclerViewActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewActivityButton" />
+
+    <Button
+        android:id="@+id/fragmentActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FragmentActivity"
+        app:layout_constraintBottom_toTopOf="@+id/firstButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
 </androidx.constraintlayout.widget.ConstraintLayout>
